@@ -1,0 +1,41 @@
+/* topography */
+html {
+       font-size: 62.5%;
+}
+* {
+       box-sizing: border-box;
+}
+:root {
+       --color-primary: #1ab6c1;
+       --color-secondary: #3e13e9;
+       --color-accent: #d46d4c;
+       --font-heading: inter ,Arial, Helvetica, sans-serif;
+       --color-heading: rgb(74, 61, 95);
+       --color-body: #231723;
+}
+body {
+       font-family: open sans ,Arial, Helvetica, sans-serif;
+       font-size: 2.4rem;
+       background: #ece3e3;
+       color: var(--color-body);
+       line-height: 1.5;
+}
+h1,
+h2,
+h3 {
+       font-family: var(--font-heading);
+       margin-bottom: 0;
+       color: var(--color-heading);
+       line-height: 1;
+       
+       
+}
+h1 {
+       font-size: 4.7rem;
+}
+h2 {
+       font-size: 4rem;
+}
+h3 {
+       font-size: 3rem;
+}
