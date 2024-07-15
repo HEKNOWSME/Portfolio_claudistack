@@ -39,3 +39,52 @@ h2 {
 h3 {
        font-size: 3rem;
 }
+.btn {
+       padding: 2rem 3rem;
+       border-radius: 4rem;
+       text-transform: uppercase;
+       font-size: 2rem;
+       font-weight: 500;
+       border: 0;
+       margin-top: 1rem;
+       word-spacing: 3px;
+       letter-spacing: 2px;
+       
+
+}
+
+.btn--block {
+       display: inline-block;
+       margin: 1rem 0;
+       width: 100%;
+}
+
+.btn--primary{
+       background: var(--color-primary);
+       color: #fff;
+       transition: all .5s ease-in-out;
+}
+.btn--primary:hover {
+       background: #35878d;
+       color: #e7e4e4;
+       transform: scale(1.02);
+       font-weight: 700;
+}
+.btn--accent {
+       background: var(--color-accent);
+       color: #fff;
+       transition: all .4s ease-in-out;
+}
+.btn--accent:hover {
+       background-color: #835546;
+       transform: scale(1.02);
+       color: #fceefc;
+       font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+       .btn {
+              font-size: 1.7rem;
+              font-weight: 700;
+       }
+       
+}
