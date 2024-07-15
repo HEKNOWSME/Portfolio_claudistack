@@ -142,7 +142,6 @@ h3 {
 
 /* card */
 .card {
-       margin: 2rem;
        border-radius: 5px;
        box-shadow: 0 0 20px 10px #dcdedf;
        overflow: hidden;
@@ -177,6 +176,12 @@ h3 {
        width: 32px;
        height: 32px;
 }
+.icon--block{
+       width: 62px;
+       height: 62px;
+       transform: translate(15rem);
+       
+}
 .icon-container {
        width: 40px;
        height: 40px;
@@ -184,4 +189,8 @@ h3 {
        display: inline-flex;
        justify-content: center;
        align-items: center;      
+}
+.plan {
+       max-width: 500px;
+       margin: auto;
 }
