@@ -2,8 +2,11 @@
 html {
        font-size: 62.5%;
 }
-* {
+*,
+*::after,
+*::before {
        box-sizing: border-box;
+       text-decoration: none;
 }
 :root {
        --color-primary: #1ab6c1;
@@ -107,3 +110,30 @@ h3 {
               font-size: 1.2rem;
        }
 }
+.arrow-link {
+       color: #a35538;
+       font-size: 2rem;
+       font-weight: bold;
+       text-transform: uppercase;
+       letter-spacing: 1px;
+}
+.arrow-link::after {
+       content: "\2192";
+       font-size: 2.3rem;
+       margin-top: 0;
+       display: inline-block;
+       margin-left: 2px;
+       transition: all .3s;
+}
+.arrow-link:hover::after {
+       transform: translate(3px);
+}
+@media screen and (min-width: 768px) {
+       .arrow-link {
+              font-size: 1.5rem;
+       }
+       .arrow-link::after {
+              font-size: 2.1rem;
+       }
+}
+
