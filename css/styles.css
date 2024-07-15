@@ -88,3 +88,22 @@ h3 {
        }
        
 }
+.badge {
+       display: inline-block;
+       color: #fff;
+       border-radius: 2rem;
+       padding: 1rem 1.7rem;
+       font-size: 1.4rem;
+       font-weight: 500;
+}
+.badge--primary {
+       background: var(--color-secondary);
+       color: #dee3e6;
+       opacity: .5;
+
+}
+@media screen and (min-width: 768px) {
+       .badge {
+              font-size: 1.2rem;
+       }
+}
