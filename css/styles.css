@@ -142,12 +142,12 @@ h3 {
 
 /* card */
 .card {
-       border-radius: 5px;
-       box-shadow: 0 0 20px 10px #dcdedf;
+       border-radius: 10px;
+       border: 2px solid #e7e7e7;
        overflow: hidden;
 }
 .card:hover {
-       box-shadow: 0 0 20px 15px #dcdedf;
+       box-shadow: 0 0 20px 10px #dcdedf;
        transform: scale(1.01);
 }
 .card--primary .card__header {
