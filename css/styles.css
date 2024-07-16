@@ -107,6 +107,9 @@ h3 {
        opacity: .5;
 
 }
+.badge--accent {
+       background: var(--color-accent);
+}
 @media screen and (min-width: 768px) {
        .badge {
               font-size: 1.2rem;
@@ -280,4 +283,24 @@ h3 {
               padding: 2rem 3rem;
               transition: all 0s;
        }
+}
+/* project plan */
+.project-plan .badge {
+       font-size: 1.3rem;
+       font-weight: 600;
+}
+.project-plan .plan__date {
+       font-size: 1.4rem;
+       letter-spacing: 1.4px;
+       opacity: .5;
+       font-weight: 500;
+}
+.project-plan .card__heading {
+       margin: 1rem 0;
+}
+.project-plan .card__content {
+       padding-top: 0;
+}
+.project__image {
+       margin-top: 0;
 }

@@ -1,0 +1,16 @@
+       
+<div class="plan project-plan">
+       <div class="card">
+              <header class="card__header">
+                     <art class="badge badge--accent">Project</art>
+                     <art class="plan__date">/May/2024</art>
+                     <article class="card__heading">
+                            Creating Website Using HTML/CSS
+                     </article>
+              </header>
+              <div class="card__content">
+                     <p class="project__image">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi enim officiis aut sit quidem iusto.</p>
+                     <a href="#" class="arrow-link left">learn more </a>
+              </div>
+       </div>
+</div>
