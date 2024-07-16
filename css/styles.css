@@ -7,6 +7,7 @@ html {
 *::before {
        box-sizing: border-box;
        text-decoration: none;
+       list-style: none;
 }
 :root {
        --color-primary: #1ab6c1;
@@ -362,4 +363,73 @@ h3 {
 }
 .block__heading {
        margin-top: 0;
+}
+/* Navigation */
+.nav {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       background: #010202;
+       flex-wrap: wrap;
+       padding: 1rem;
+}
+.logo {
+       color: #d2cfcf;
+       margin-left: .4rem;
+}
+.nav__icon {
+       opacity: 1;
+       fill: #e5dbdb;
+       transition: all .5s;
+}
+.nav__icon:hover {
+       opacity: .8;
+       transform: scale(1.06);
+}
+
+.list {
+       width: 100%;
+       padding: 0;
+}
+.list__item {
+       margin: 5px;
+       border-bottom: 1px solid #352d2d;
+       transition: transform .3s ease-out;
+}
+.list__item:hover {
+       transform: translateX(2px);
+}
+.list a {
+       color: #8b9b9c;
+       font-weight: 500;
+       transition: color .5s;
+}
+.list a:hover {
+       color: #41787b;
+}
+.list.collapsible__content {
+       margin: 0;
+}
+@media screen and (min-width: 768px) {
+       
+       .nav__icon {
+              display: none;
+       }
+       .list {
+              width: auto;
+              max-height: 100%;
+              opacity: 1;
+              font-size: 2rem;
+              display: flex;
+              gap: 1rem;
+              
+       }
+       .list__item {
+              border-bottom: 0;
+       }
+       .list__item:hover {
+              transform: scale(1.1);
+       }
+       
+       
 }
