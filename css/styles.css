@@ -175,6 +175,8 @@ h3 {
 }
 .card__content {
        font-size: 1.9rem;
+       background: #f9f5f5;
+       color: #010202;
 }
 
 /* icons */
@@ -352,8 +354,8 @@ h3 {
        color: #fff;
 }
 .block--skewed-left {
-       clip-path: polygon(0% 0%, 0% 100%, 100% 88%,100% 0%);
-       padding-bottom: calc(var(--padding-vertical) + 4rem);
+       clip-path: polygon(0% 0%, 0% 100%, 100% 90%,100% 0%);
+       padding-bottom: calc(var(--padding-vertical) + 8rem);
        
 }
 .block--skewed-right {
@@ -478,4 +480,7 @@ h3 {
               font-size: 1.8rem;
        }
 }
-/*  */
+/*services  */
+.services {
+       gap: 1rem 2rem;
+}
