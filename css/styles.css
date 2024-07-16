@@ -250,3 +250,34 @@ h3 {
        opacity: 1;
        transition: all .5s;
 }
+/* languages used in our services */
+.collapsible .card__header{
+       padding: 0 2rem;
+}
+.collapsible .card__content {
+       padding: 0 2rem;
+       padding-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+       .languages__collapsible {
+              padding: 0;
+              max-width: 500px;
+       }
+       .languages__collapsible .collapsible__chevron {
+              display: none;
+       }
+       .languages__collapsible .collapsible__header {
+              
+              padding: 2rem 3rem;
+       }
+       .languages__collapsible .card__header {
+              padding: 2rem 3rem;
+              background: var(--color-primary);
+       } 
+       .languages__collapsible .collapsible__content {
+              max-height: 100%;
+              opacity: 1;
+              padding: 2rem 3rem;
+              transition: all 0s;
+       }
+}
