@@ -290,8 +290,11 @@ h3 {
        }
        .languages__collapsible .card__header {
               padding: 2rem 3rem;
-              background: var(--color-primary);
-       } 
+              background: var(--color-accent);
+       }
+       .languages__collapsible .collapsible__heading {
+              color: #f6feff;
+       }
        .languages__collapsible .collapsible__content {
               max-height: 100%;
               opacity: 1;
@@ -483,4 +486,13 @@ h3 {
 /*services  */
 .services {
        gap: 1rem 2rem;
+}
+/* languages */
+.languages {
+       gap: 1rem 2rem;
+}
+@media screen and (min-width: 768px) {
+       .languages {
+              grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+       }
 }
