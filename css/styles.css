@@ -582,3 +582,29 @@ h3 {
               margin-top: -10rem;
        }
 }
+/* .call-out */
+.call-out {
+       background: #5287d5;
+       padding: 2rem;
+       max-width: 500px;
+       margin: auto;
+}
+.call-out .btn {
+       justify-self: center;
+}
+.call-out .card__heading {
+       text-align: center;
+}
+@media screen and (min-width: 768px) {
+       .call-out {
+              max-width: none;
+              grid-template-columns: 1fr auto;
+              
+       }
+       .call-out .btn {
+              align-self: center;
+       }
+       .call-out .card__heading {
+              text-align: left;
+       }
+}
