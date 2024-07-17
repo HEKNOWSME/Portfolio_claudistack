@@ -410,6 +410,9 @@ h2 {
        }
 }
 /* Navigation */
+.nav__header {
+       background: #4aaac2;
+}
 .nav {
        display: flex;
        justify-content: space-between;
@@ -697,6 +700,12 @@ h2 {
 .footer {
        padding-top: 6rem;
 }
+.address__list {
+       padding: 0;
+}
+.address__list  a {
+       color: #652e2e;
+} 
 @media screen and (min-width: 768px) {
        .footer {
               grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
