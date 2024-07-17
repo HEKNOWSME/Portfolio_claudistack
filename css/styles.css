@@ -16,6 +16,8 @@ html {
        --font-heading: inter ,Arial, Helvetica, sans-serif;
        --color-heading: rgb(74, 61, 95);
        --color-body: #231723;
+       --font-size-block__heading: 3rem;
+       --media-block__heading: 2.3rem;
 }
 body {
        font-family: open sans ,Arial, Helvetica, sans-serif;
@@ -399,7 +401,13 @@ h2 {
        text-align: center;
 }
 .block__heading {
+       font-size: var(--font-size-block__heading);
        margin-top: 0;
+}
+@media screen and (min-width: 768px) {
+       .block__heading {
+              font-size: var(--media-block__heading);
+       }
 }
 /* Navigation */
 .nav {
@@ -517,7 +525,7 @@ h2 {
 }
 @media screen and (min-width: 768px) {
        .about .block__heading {
-              font-size: 2.3rem;
+              font-size: var(--font-size-block__heading);
        }
        .about_container {
               grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -557,9 +565,6 @@ h2 {
        font-size: 2.3rem;
 }
 @media screen and (min-width: 768px) {
-       .services-block .block__heading {
-              font-size: 2.3rem;
-       }
        .services .card__heading {
               font-size: 2.1rem;
        }
@@ -580,7 +585,7 @@ h2 {
               grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
        }
        .languages-block .block__heading {
-              font-size: 2.3rem;
+              font-size: var(--font-size-block__heading);
        }
        .languages .collapsible__heading {
               font-size: 2rem;
@@ -597,9 +602,6 @@ h2 {
 @media screen and (min-width: 768px) {
        .project {
               grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-       }
-       .project-block .block__heading {
-              font-size: 2.3rem;
        }
 }
 /* footer */
