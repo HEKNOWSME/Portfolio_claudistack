@@ -21,16 +21,16 @@
                             <use href="/css/sprite.svg#menu"></use>
                      </svg>
                      <ul class="list collapsible__content">
-                            <li class="list__item"><a href="/">Home</a></li>
-                            <li class="list__item"><a href="/">About</a></li>
-                            <li class="list__item"><a href="/">Services</a></li>
-                            <li class="list__item"><a href="/">Portfolio</a></li>
-                            <li class="list__item"><a href="/">Contact</a></li>
+                            <li class="list__item"><a href="#home">Home</a></li>
+                            <li class="list__item"><a href="#about">About</a></li>
+                            <li class="list__item"><a href="#service">Services</a></li>
+                            <li class="list__item"><a href="#portfolio">Portfolio</a></li>
+                            <li class="list__item"><a href="#contact">Contact</a></li>
                      </ul>
               </nav>
        </header>
        <main>
-              <section class="hero block block--dark block--skewed-right">
+              <section class="hero block block--dark block--skewed-right" id="home">
                      <div class="grid grid--1x2 container">
                             <header class="block__header">
                                    <h4 class="block__heading">Hello, it's me</h4>
@@ -42,7 +42,7 @@
                             <img class="img" src="/images/about me image.png" alt="">
                      </div>
               </section>
-              <section class="about block container">
+              <section class="about block container" id="about">
                      <header class="block__header">
                             <h3 class="block__heading">About Me</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, expedita.</p>
@@ -66,7 +66,7 @@
                      </div>
               </section>
               
-              <section class="block block--dark block--skewed-left services-block">
+              <section class="block block--dark block--skewed-left services-block" id="service">
                      <header class="block__header">
                             <h3 class="block__heading">Our services</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,               molestias.</p>
@@ -127,6 +127,15 @@
                                           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id modi molestiae, sit earum commodi distinctio!
                                    </div>
                             </article>
+                            <article class="languages__collapsible card collapsible" id="portfolio">
+                                   <header class="card__header collapsible__header">
+                                          <h3 class="collapsible__heading">Web development</h3>
+                                          <img class="icon collapsible__chevron" src="/css/chevron.svg" alt="">
+                                   </header>
+                                   <div class="card__content collapsible__content">
+                                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id modi molestiae, sit earum commodi distinctio!
+                                   </div>
+                            </article>
                             <article class="languages__collapsible card collapsible">
                                    <header class="card__header collapsible__header">
                                           <h3 class="collapsible__heading">Mobile app development</h3>
@@ -138,7 +147,7 @@
                             </article>
                      </div>
               </section>
-              <section class="block project-block">
+              <section class="block project-block" id="project">
                      <header class="block__header">
                             <h3 class="block__heading">Latest Projects</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, accusantium.</p>
@@ -184,12 +193,12 @@
               </section>
               <div class="combine-footer">
                      <section class="block container call-out-block">
-                            <div class="call-out card--primary grid grid--1x2">
+                            <div class="call-out card--primary grid grid--1x2" id="contact">
                                    <header class="call-out__header">
                                           <h3 class="card__heading call-out__heading">Ready to Contact me?</h3>
                                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nemo.</p>
                                    </header>
-                                   <a href="contact.html" class="btn btn--accent">contact me</a>
+                                   <a href="mailto:iranziclaude619@gmail.com" class="btn btn--accent">contact me</a>
                             </div>
                      </section>
                      <footer class="block block--dark">

@@ -153,7 +153,7 @@ h2 {
 }
 .card:hover {
        box-shadow: 0 0 20px 5px #dcdedf;
-       transform: scale(1.01);
+       transform: scale(1.04);
 }
 .card--primary .card__header {
        background-color: var(--color-primary);
@@ -600,6 +600,12 @@ h2 {
        }
        .languages-block .block__heading {
               font-size: var(--font-size-block__heading);
+       }
+       .languages__collapsible:nth-child(2) {
+              transform: scaleY(1.06);
+       }
+       .languages__collapsible:nth-child(2):hover {
+              transform: scaleY(1.08);
        }
        .languages .collapsible__heading {
               font-size: 2rem;
