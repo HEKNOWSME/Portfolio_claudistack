@@ -445,12 +445,13 @@ h2 {
        transform: translateX(2px);
 }
 .list a {
+       font-size: 2.1rem;
        color: #ffffff;
        font-weight: 500;
        transition: color .5s;
 }
 .list a:hover {
-       color: #3a696b;
+       color: #253031;
 }
 .list.collapsible__content {
        margin: 0;
@@ -475,12 +476,18 @@ h2 {
        .list__item:hover {
               transform: scale(1.1);
        }
+       .list__item a {
+              font-size: 1.9rem;
+       }
        
        
 }
 /* hero */
 .hero {
        gap: 1rem;
+}
+.hero__name {
+       font-size: 2.5rem;
 }
 .img {
        width: 100%;
@@ -492,6 +499,11 @@ h2 {
        .hero .block__header {
               align-self: center;
               justify-self: center;
+              line-height: 1.7;
+              letter-spacing: 1.3px;
+       }
+       .hero__name {
+              font-size: 2.2rem;
        }
        .hero .btn {
               margin: 2rem 0;
@@ -503,6 +515,8 @@ h2 {
 }
 /* about me */
 .about_container {
+       border-radius: 5px;
+       box-shadow: 0 0 20px 10px #d7d1d1;
        padding: 1rem;
        gap: 1rem 2rem;
 }
@@ -627,6 +641,56 @@ h2 {
        margin-left: 5rem;
 
 }
+
+/* .call-out */
+.call-out {
+       margin-top: -10px;
+       border-radius: 10px;
+       padding: 2rem;
+       max-width: 500px;
+       margin: auto;
+       transform: translateY(17rem);
+
+}
+.call-out-block {
+       padding-top: 0rem;
+
+}
+.combine-footer {
+       margin-top: -16rem;
+}
+.card--primary.call-out {
+       background-color: #1ab6c1;
+}
+.call-out__heading {
+       text-align: center;
+       margin-top: 1rem;
+       font-size: 3rem;
+}
+.call-out .btn {
+       justify-self: center;
+       padding: 1.5rem 3rem;
+}
+
+@media screen and (min-width: 768px) {
+       .call-out {
+              max-width: none;
+              grid-template-columns: 1fr auto;
+              transform: translateY(140px);
+              
+       }
+       .call-out .btn {
+              align-self: center;
+       }
+       .call-out .call-out__heading {
+              text-align: left;
+              font-size: 2.3rem;
+       }
+}
+
+.footer {
+       padding-top: 6rem;
+}
 @media screen and (min-width: 768px) {
        .footer {
               grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -653,37 +717,3 @@ h2 {
               margin-top: -10rem;
        }
 }
-/* .call-out */
-.call-out {
-       padding: 2rem;
-       max-width: 500px;
-       margin: auto;
-}
-.card--primary.call-out {
-       background-color: #1ab6c1;
-}
-.call-out__heading {
-       text-align: center;
-       margin-top: 1rem;
-       font-size: 3rem;
-}
-.call-out .btn {
-       justify-self: center;
-       padding: 1.5rem 3rem;
-}
-
-@media screen and (min-width: 768px) {
-       .call-out {
-              max-width: none;
-              grid-template-columns: 1fr auto;
-              
-       }
-       .call-out .btn {
-              align-self: center;
-       }
-       .call-out .call-out__heading {
-              text-align: left;
-              font-size: 2.3rem;
-       }
-}
-
