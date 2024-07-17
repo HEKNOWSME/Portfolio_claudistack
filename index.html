@@ -15,7 +15,7 @@
        <header class="nav__header">
               <nav class="nav collapsible collapsible--expandable container">
                      <a class="logo" href="#">
-                            <img class="img" src="/images/iranzi.png" alt="logo">
+                            <img class="img nav__image" src="/css/iranzi.svg" alt="logo">
                      </a>
                      <svg class="icon icon--primary nav__icon">
                             <use href="/css/sprite.svg#menu"></use>
@@ -39,7 +39,11 @@
                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, mollitia!</p>
                                    <a class="hero__btn" href="#"><button type="button" class="btn btn--accent">download cv</button></a>
                             </header>
-                            <img class="img" src="/images/about me image.png" alt="">
+                            <picture>
+                                   <source srcset="/images/fullstack@2x.webp 2x, /images/fullstack.webp 1x" type="image/webp">
+                                   <source srcset="/images/fullstack@2x.png 2x, /images/fullstack.webp 1x" type="image/png">
+                                   <img class="img" src="/images/about me image.png" alt="computer with codes">
+                            </picture>
                      </div>
               </section>
               <section class="about block container" id="about">
@@ -48,7 +52,11 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, expedita.</p>
                      </header>
                      <div class="grid grid--1x2 about_container">
-                            <img class="img" src="/images/NATH_1.JPG" alt="">
+                            <picture>
+                                   <source srcset="/images/about@2x.webp 2x, /images/about.webp" type="image/webp">
+                                   <source srcset="/images/about@2x.png 2x, /images/about.png" type="image/png">
+                                   <img class="img" src="/images/about@2x.png" alt="">
+                            </picture>
                             <div class="media">
                                    <header class="media__header">
                                           <span class="icon-container icon--primary media__icon">
@@ -91,7 +99,7 @@
                                    <div class="card card--primary">
                                           <header class="card__header">
                                                  <svg class="icon plan__icon">
-                                                        <use href="/css/sprite.svg#laptop"></use>
+                                                        <use href="/css/sprite.svg#fullstack"></use>
                                                  </svg>
                                                  <h3 class="card__heading">Fullstack Web Development</h3>
                                           </header>
