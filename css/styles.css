@@ -153,7 +153,7 @@ h3 {
        overflow: hidden;
 }
 .card:hover {
-       box-shadow: 0 0 20px 10px #dcdedf;
+       box-shadow: 0 0 20px 5px #dcdedf;
        transform: scale(1.01);
 }
 .card--primary .card__header {
@@ -513,7 +513,10 @@ h3 {
 }
 /*services  */
 .services {
-       gap: 1rem 2rem;
+       gap: 3rem 2rem;
+}
+.services .plan:nth-child(2) {
+       transform: scaleY(1.1);
 }
 /* languages */
 .languages {
@@ -584,16 +587,19 @@ h3 {
 }
 /* .call-out */
 .call-out {
-       background: #5287d5;
        padding: 2rem;
        max-width: 500px;
        margin: auto;
 }
+.card--primary.call-out {
+       background-color: #1ab6c1;
+}
 .call-out .btn {
        justify-self: center;
 }
-.call-out .card__heading {
+.call-out__heading {
        text-align: center;
+       margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
        .call-out {
@@ -604,7 +610,8 @@ h3 {
        .call-out .btn {
               align-self: center;
        }
-       .call-out .card__heading {
+       .call-out .call-out__heading {
               text-align: left;
        }
 }
+
