@@ -723,13 +723,14 @@ h2 {
 @media screen and (min-width: 768px) {
        .call-out {
               max-width: none;
-              grid-template-columns: 1fr auto;
+              grid-template-columns: repeat(2,1fr);
               transform: translateY(140px);
               font-size: 1.7rem;
        }
        .call-out .btn {
               align-self: center;
               font-size: 1.2rem;
+              justify-content: center;
        }
        .call-out .call-out__heading {
               text-align: left;
