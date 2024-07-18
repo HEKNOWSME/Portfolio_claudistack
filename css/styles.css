@@ -304,11 +304,12 @@ h2 {
               background: var(--color-accent);
        }
        .languages__collapsible .collapsible__heading {
+              margin-top: 1rem;
               color: #f6feff;
        }
        .languages__collapsible .collapsible__content {
               max-height: 100%;
-              font-size: 1rem;
+              font-size: 1.5rem;
               opacity: 1;
               padding: 1rem 2rem;
               transition: all 0s;
@@ -497,6 +498,9 @@ h2 {
 .hero__name {
        font-size: 2.5rem;
 }
+.hero__content {
+       font-size: 2rem;
+}
 .img {
        width: 100%;
 }
@@ -514,7 +518,7 @@ h2 {
               font-size: 2rem;
        }
        .hero__content {
-              font-size: 1.2rem;
+              font-size: 1.5rem;
        }
        .hero .btn {
               margin: 2rem 0;
@@ -574,6 +578,9 @@ h2 {
 .services-block .block__heading {
        font-size: 3rem;
 }
+.services .card__content {
+       font-size: 2rem;
+}
 .services .plan:nth-child(2) {
        transform: scaleY(1.04);
 }
@@ -593,17 +600,24 @@ h2 {
        .services .btn {
               font-size: 1rem;
        }
+.services .card__content {
+       font-size: 1.7rem;
+}
 }
 
 /* languages */
 .languages {
        gap: 1rem 2rem;
 }
-.languages-block .block__heading {
-       font-size: 3rem;
+
+.block__content {
+       font-size: 2rem;
 }
 .languages-block .collapsible__heading {
        font-size: 2.2rem;
+}
+.languages .collapsible__content {
+       font-size: 2rem;
 }
 @media screen and (min-width: 768px) {
        .languages {
@@ -621,6 +635,9 @@ h2 {
        .languages .collapsible__heading {
               font-size: 2rem;
        }
+       .languages .collapsible__content {
+              font-size: 1.7rem;
+       }
        
 }
 /* projects block */
@@ -630,9 +647,15 @@ h2 {
 .project-block .block__heading {
        font-size: 3rem;
 }
+.project .card__content {
+       font-size: 2rem;
+}
 @media screen and (min-width: 768px) {
        .project {
               grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+       }
+       .project .card__content {
+              font-size: 1.7rem;
        }
 }
 /* footer */
@@ -664,7 +687,7 @@ h2 {
 
 /* .call-out */
 .call-out {
-       font-size: 1.5rem;
+       font-size: 2rem;
        margin-top: -10px;
        border-radius: 10px;
        padding: 2rem;
@@ -702,7 +725,7 @@ h2 {
               max-width: none;
               grid-template-columns: 1fr auto;
               transform: translateY(140px);
-              
+              font-size: 1.7rem;
        }
        .call-out .btn {
               align-self: center;
@@ -713,9 +736,12 @@ h2 {
               font-size: 2rem;
        }
 }
-
+/* footer*/
 .footer {
        padding-top: 6rem;
+}
+.footer .collapsible__heading {
+       font-size: 2.3rem;
 }
 .address__list {
        padding: 0;
@@ -734,7 +760,7 @@ h2 {
               max-height: 100%;
               opacity: 1;
               margin-top: 1rem;
-              font-size: 1.5rem;
+              font-size: 1.7rem;
        }
        .footer .collapsible__heading {
               font-size: 2rem;
