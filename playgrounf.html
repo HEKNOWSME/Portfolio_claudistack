@@ -3,28 +3,223 @@
 <head>
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta name="description" content="Find web and App full stack Developer">
+       <title>Claudistack - Fullstack development</title>
+       <meta property="og:title" content="Claudistack full stack developer">
+       <meta property="og:description" content="find your full stack better choice here">
+       <meta property="og:type" content="website">
+       <meta property="og:image" content="http://">
+       <meta property="og:url" content="http://Claudistack.com">
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="/css/normalize.css">
        <link rel="stylesheet" href="css/styles.css">
-       <title>ClaudI-stack</title>
+       
 </head>
 <body>
-              <div class="combine">
-                     <section class="block call-out-block container">
-                            <div class="call-out  card--primary grid grid--1x2">
+       <header class="nav__header">
+              <nav class="nav collapsible  container">
+                     <a class="logo" href="#">
+                            <img class="img nav__image" src="/css/iranzi.svg" alt="logo">
+                     </a>
+                     <svg class="icon icon--primary nav__icon">
+                            <use href="/css/sprite.svg#menu"></use>
+                     </svg>
+                     <ul class="list collapsible__content">
+                            <li class="list__item"><a href="#home">Home</a></li>
+                            <li class="list__item"><a href="#about">About</a></li>
+                            <li class="list__item"><a href="#service">Services</a></li>
+                            <li class="list__item"><a href="#portfolio">Portfolio</a></li>
+                            <li class="list__item"><a href="#contact">Contact</a></li>
+                     </ul>
+              </nav>
+       </header>
+       <main>
+              <section class="hero block block--dark block--skewed-right" id="home">
+                     <div class="grid grid--1x2 container">
+                            <header class="block__header">
+                                   <h4 class="block__heading">Hello, it's me</h4>
+                                   <h3 class="hero__name">iranzi Claude</h3>
+                                   <span>I am Full stack Web & App Developer</span>
+                                   <p class="hero__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, mollitia!</p>
+                                   <a class="hero__btn" href="#"><button type="button" class="btn btn--accent">download cv</button></a>
+                            </header>
+                            <picture>
+                                   <source srcset="/images/fullstack@2x.webp 2x, /images/fullstack.webp 1x" type="image/webp">
+                                   <source srcset="/images/fullstack@2x.png 2x, /images/fullstack.webp 1x" type="image/png">
+                                   <img class="img" src="/images/about me image.png" alt="computer with codes">
+                            </picture>
+                     </div>
+              </section>
+              <section class="about block container" id="about">
+                     <header class="block__header">
+                            <h3 class="block__heading">About Me</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, expedita.</p>
+                     </header>
+                     <div class="grid grid--1x2 about_container">
+                            <picture>
+                                   <source srcset="/images/about@2x.webp 2x, /images/about.webp" type="image/webp">
+                                   <source srcset="/images/about@2x.png 2x, /images/about.png" type="image/png">
+                                   <img class="img" src="/images/about@2x.png" alt="">
+                            </picture>
+                            <div class="media">
+                                   <header class="media__header">
+                                          <span class="icon-container icon--primary media__icon">
+                                                 <svg class="icon">
+                                                        <use href="/css/sprite.svg#fullstack"></use>
+                                                 </svg>
+                                          </span>
+                                   </header>
+                                   <div class="media__body">
+                                          <h3 class="media__heading">Fullstack Developer</h3>
+                                          <p class="media__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam omnis aliquid explicabo vitae dolore molestiae ut debitis distinctio odio non, accusantium quidem nemo odit architecto vero quia eos facere repudiandae velit consequuntur dolorem, amet, veritatis placeat deserunt? Porro, tempore labore.</p> 
+                                          <a class="btn-about" href="/"><button type="button" class="btn btn--accent btn--block">learn more</button></a>            
+                                   </div>
+                            </div>
+                     </div>
+                     
+              </section>
+              
+              <section class="block block--dark block--skewed-left services-block" id="service">
+                     <header class="block__header">
+                            <h3 class="block__heading">Our services</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,               molestias.</p>
+                     </header>
+                     <div class="grid grid--1x2 container services">
+                            <article class="plan">
+                                   <div class="card card--primary">
+                                          <header class="card__header">
+                                                 <svg class="icon plan__icon">
+                                                        <use href="/css/sprite.svg#laptop"></use>
+                                                 </svg>
+                                                 <h3 class="card__heading">Mobile App development</h3>
+                                          </header>
+                                          <div class="card__content">
+                                                 Lorem ipsum dolor sit amet consectetur               adipisicing elit. Excepturi enim officiis               aut sit quidem iusto.
+                                                 <a href="#"><button type="button" class="btn btn--block btn--accent">Get started</button></a>
+                                          </div>
+                            
+                                   </div>
+                            </article>
+                            <article class="plan">
+                                   <div class="card card--primary">
+                                          <header class="card__header">
+                                                 <svg class="icon plan__icon">
+                                                        <use href="/css/sprite.svg#fullstack"></use>
+                                                 </svg>
+                                                 <h3 class="card__heading">Fullstack Web Development</h3>
+                                          </header>
+                                          <div class="card__content">
+                                                 Lorem ipsum dolor sit amet consectetur               adipisicing elit. Excepturi enim officiis               aut sit quidem iusto.
+                                                 <a href="#"><button type="button" class="btn btn--block btn--accent">Get started</button></a>
+                                          </div>                           
+                                   </div>
+                            </article>
+                     </div>
+              </section>
+              <section class="block container languages-block">
+                     <header class="block__header">
+                            <h3 class="block__heading">Our Expertise as Fullstack development</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, suscipit?</p>
+                     </header>
+                     <div class="grid languages">
+                            <article class="languages__collapsible card collapsible--expandable">
+                                   <header class="card__header collapsible__header">
+                                          <h3 class="collapsible__heading">Frontend development</h3>
+                                          <img class="icon collapsible__chevron" src="/css/chevron.svg" alt="">
+                                   </header>
+                                   <div class="card__content collapsible__content">
+                                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id modi molestiae, sit earum commodi distinctio! 
+                                   </div>
+                            </article>
+                            <article class="languages__collapsible card collapsible">
+                                   <header class="card__header collapsible__header">
+                                          <h3 class="collapsible__heading">Backend development</h3>
+                                          <img class="icon collapsible__chevron" src="/css/chevron.svg" alt="">
+                                   </header>
+                                   <div class="card__content collapsible__content">
+                                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id modi molestiae, sit earum commodi distinctio!
+                                   </div>
+                            </article>
+                            <article class="languages__collapsible card collapsible" id="portfolio">
+                                   <header class="card__header collapsible__header">
+                                          <h3 class="collapsible__heading">Web development</h3>
+                                          <img class="icon collapsible__chevron" src="/css/chevron.svg" alt="">
+                                   </header>
+                                   <div class="card__content collapsible__content">
+                                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id modi molestiae, sit earum commodi distinctio!
+                                   </div>
+                            </article>
+                            <article class="languages__collapsible card collapsible">
+                                   <header class="card__header collapsible__header">
+                                          <h3 class="collapsible__heading">Mobile app development</h3>
+                                          <img class="icon collapsible__chevron" src="/css/chevron.svg" alt="">
+                                   </header>
+                                   <div class="card__content collapsible__content">
+                                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id modi molestiae, sit earum commodi distinctio!
+                                   </div>
+                            </article>
+                     </div>
+              </section>
+              <section class="block project-block" id="project">
+                     <header class="block__header">
+                            <h3 class="block__heading">Latest Projects</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, accusantium.</p>
+                     </header>
+                     <div class="container grid project">        
+                            <div class="plan project-plan">
+                                   <div class="card card--accent">
+                                          <header class="card__header">
+                                                 <art class="badge badge--accent">Project</art>
+                                                 <art class="plan__date">/May/2024</art>
+                                          </header>
+                                          <div class="card__content">
+                                                 <p class="project__image">Lorem ipsum dolor sit amet                      consectetur adipisicing elit. Excepturi enim officiis aut                      sit quidem iusto.</p>
+                                                 <a href="#" class="arrow-link left">learn more </a>
+                                          </div>
+                                   </div>
+                            </div>
+                            <div class="plan project-plan">
+                                   <div class="card card--primary">
+                                          <header class="card__header">
+                                                 <art class="badge badge--accent">Project</art>
+                                                 <art class="plan__date">/May/2024</art>
+                                          </header>
+                                          <div class="card__content">
+                                                 <p class="project__image">Lorem ipsum dolor sit amet                      consectetur adipisicing elit. Excepturi enim officiis aut                      sit quidem iusto.</p>
+                                                 <a href="#" class="arrow-link left">learn more </a>
+                                          </div>
+                                   </div>
+                            </div>
+                            <div class="plan project-plan">
+                                   <div class="card card--secondary">
+                                          <header class="card__header">
+                                                 <art class="badge badge--accent">Project</art>
+                                                 <art class="plan__date">/May/2024</art>
+                                          </header>
+                                          <div class="card__content">
+                                                 <p class="project__image">Lorem ipsum dolor sit amet                      consectetur adipisicing elit. Excepturi enim officiis aut                      sit quidem iusto.</p>
+                                                 <a href="#" class="arrow-link left">learn more </a>
+                                          </div>
+                                   </div>
+                            </div>
+                     </div>
+              </section>
+              <footer class="combine-footer">
+                     <section class="block container call-out-block">
+                            <div class="call-out card--primary grid grid--1x2" id="contact">
                                    <header class="call-out__header">
                                           <h3 class="card__heading call-out__heading">Ready to Contact me?</h3>
-                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nemo.</p>
+                                          <p class="call-out__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nemo.</p>
                                    </header>
-                                   <a href="contact.html" class="btn btn--accent">contact me</a>
+                                   <a href="mailto:iranziclaude619@gmail.com" class="btn btn--accent">contact me</a>
                             </div>
                      </section>
-                     <footer class="block block--dark">
+                     <section class="block block--dark">
                             <div class="footer container">
-                                   <article class="collapsible collapsible--expandable">
+                                   <article class="collapsible">
                                           <header class="collapsible__header">
                                                  <h3 class="collapsible__heading">Products</h3>
                                                  <img class="icon collapsible__chevron" src="/css/chevron.svg" alt="">
@@ -33,22 +228,27 @@
                                                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, maxime.
                                           </div>
                                    </article>
-                                   <article class="collapsible collapsible--expandable">
+                                   <article class="collapsible">
                                           <header class="collapsible__header">
                                                  <h3 class="collapsible__heading">Address</h3>
                                                  <img class="icon collapsible__chevron" src="/css/chevron.svg" alt="">
                                           </header>
                                           <address class="collapsible__content">
-                                                 <ul><li>Rwanda</li></ul>
+                                                 <ul class="address__list">
+                                                        <li>Kamonyi district</li>
+                                                        <li>Kigali city Rwanda</li>
+                                                        <li>Huye Campus</li>
+                                                        <li><a href="tel:+250783003561">Tel:+250783003561</a></li>
+                                                 </ul>
                                           </address>
                                    </article>
                                    <article class="footer__logo">
                                           <img class="img" src="/images/iranzi.png" alt="">
-                                          <p class="copy">Copyright &copy; 2024 Claude</p>
+                                          <p class="copy">Copyright &copy; 2024 iranzi</p>
                                    </article>
                                    </div>
-                     </footer>
-              </div>
+                     </section>
+              </footer>
        </main>
        <script src="/js/main.js"></script>
 </body>
