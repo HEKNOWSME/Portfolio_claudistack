@@ -360,6 +360,10 @@ h2 {
 .project__image {
        margin-top: 0;
 }
+.project .img {
+       border-bottom-left-radius: 10px;
+       border-bottom-right-radius: 10px;
+}
 /* media */
 .media{
        display: flex;
@@ -636,7 +640,7 @@ h2 {
               font-size: 2rem;
        }
        .languages .collapsible__content {
-              font-size: 1.7rem;
+              font-size: 1.4rem;
        }
        
 }
@@ -648,14 +652,14 @@ h2 {
        font-size: 3rem;
 }
 .project .card__content {
-       font-size: 2rem;
+       font-size: 1.7rem;
 }
 @media screen and (min-width: 768px) {
        .project {
-              grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+              grid-template-columns: repeat(3,1fr);
        }
        .project .card__content {
-              font-size: 1.7rem;
+              font-size: 1.4rem;
        }
 }
 /* footer */
@@ -760,7 +764,7 @@ h2 {
               max-height: 100%;
               opacity: 1;
               margin-top: 1rem;
-              font-size: 1.7rem;
+              font-size: 1.5rem;
        }
        .footer .collapsible__heading {
               font-size: 2rem;
